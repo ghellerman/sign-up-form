@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Norse Bold', sans-serif;
+}
+
+.content {
+    background-color: rgb(10, 10, 10);
+    color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+}
+
+.content, 
+.logo {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+/* left side */
+
+.image-sidebar {
+    background-image: url('/assets/background.jpeg');
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo {
+    position: relative;
+    top: 25vh;
+    gap: 5rem;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    max-height: 200px;
+}
+
+.logo > h1 {
+    color: white;
+}
+
+/* right side */
+
+.main-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 25px 5px;
+    gap: 50px;
+}
+
+.main-container > header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container > header > h1, h2 {
+    padding-top: 25px;
+}
+
+.forms {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    max-width: 80%;
+}
+
+.form-title {
+width: 100%;
+font-size: 1.5rem;
+font-weight: 700;
+padding-left: 45px;
+}
+
+input {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    gap: 5px;
+}
+
+label {
+    
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.log-in {
+    display: flex;
+    gap: 15px;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.log-in > a {
+    text-decoration: none;
+    color: rgba(255, 0, 234, 0.6);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+button {
+    background-color: rgba(255, 0, 255, 0.6);
+    font-weight: 700;
+    font-size: 1.75rem;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 5px 0;
+}
